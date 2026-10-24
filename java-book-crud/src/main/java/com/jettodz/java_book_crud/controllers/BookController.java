@@ -1,11 +1,17 @@
 package com.jettodz.java_book_crud.controllers;
 
-import com.jettodz.java_book_crud.dtos.BookRecord;
-import com.jettodz.java_book_crud.entities.Book;
-import com.jettodz.java_book_crud.services.BookService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jettodz.java_book_crud.dtos.BookRecord;
+import com.jettodz.java_book_crud.services.BookService;
+
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
