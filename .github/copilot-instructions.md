@@ -1,0 +1,5 @@
+# GitHub Copilot instructions
+
+Read the repository-wide instructions in [../AGENTS.md](../AGENTS.md) first.
+
+This branch is scoped to one technology. Identify the current technology-specific folder, read its `AGENTS.md`, and work only within that folder. Do not inspect other language folders.

@@ -20,6 +20,6 @@ No, you will only need the tables
 * book
 * author_book
 
-and it's corresponding data in their own 'populate' sql file in the repo. Note that the information for `book_language` is in the 'lookup' file, and along with it there is information for other tables not used, so take only the inserts for `book_language`. 
+and it's corresponding data in their own 'populate' sql file in the repo. 
 
-
+Note that the information for `book_language` is in the 'lookup' file, and along with it there is information for other tables not used, so take only the inserts for `book_language`. 
