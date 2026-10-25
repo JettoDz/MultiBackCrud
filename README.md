@@ -1,7 +1,7 @@
 # MultiBackCrud 🔀
 Wanna learn more hands on. So a crud with multiple backends and a single front end I will.
 
-I will build a very, VERY simple front end as a starting point, to later on work with a more proper front end. I'm thinking Svelte, of course, but HTMX and Angular are my second options. Or maybe I will just bulid a Multi**FRONT**Crud, for that matter.
+I will build a very, VERY simple front end as a starting point, to later on work with a more proper front end. I'm thinking Svelte, of course, but HTMX and Angular are my second options. Or maybe I will just build a Multi**FRONT**Crud, for that matter, as React is still as relevant as ever.
 
 ## About the datasource
 I came accros a fantastic repo for this: 
