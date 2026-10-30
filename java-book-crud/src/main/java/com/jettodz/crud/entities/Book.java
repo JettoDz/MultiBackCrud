@@ -1,17 +1,17 @@
 package com.jettodz.crud.entities;
 
-import javax.persistence.Table;
+import jakarta.persistence.Table;
 import com.jettodz.crud.dtos.requests.BookRequest;
-import javax.persistence.Entity;
+import jakarta.persistence.Entity;
 
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Column;
-import javax.persistence.OneToOne;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToMany;
-import javax.persistence.JoinTable;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Column;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.JoinTable;
 import java.time.LocalDate;
 import java.util.List;
 

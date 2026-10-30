@@ -1,7 +1,14 @@
 package com.jettodz.crud.dtos.requests;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.jettodz.crud.serialization.BookRequestJson;
+
+@JsonSerialize(using = BookRequestJson.Serializer.class)
+@JsonDeserialize(using = BookRequestJson.Deserializer.class)
 public class BookRequest {
 
     private String title;
@@ -70,4 +77,24 @@ public class BookRequest {
     public void setPublisherId(Integer publisherId) {
         this.publisherId = publisherId;
     }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, isbn, languageId);
+    }
+
+    @Override 
+    public String toString() {
+        return String.format(
+            "{\"title\": \"%s\", \"isbn\": \"%s\", \"languageId\": %d, \"numberOfPages\": %d, \"publicationDate\": \"%s\", \"authorIds\": \"%s\", \"publisherId\": %d}",
+            title != null ? title : "null",
+            isbn != null ? isbn : "null",
+            languageId != null ? languageId : 0,
+            numberOfPages != null ? numberOfPages : 0,
+            publicationDate != null ? publicationDate.toString() : "null",
+            authorIds != null ? authorIds.toString() : "null",
+            publisherId != null ? publisherId : 0
+        );
+    }
+
 }
